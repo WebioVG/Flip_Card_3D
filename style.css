@@ -1,0 +1,103 @@
+.rotateY-180 {
+    transform: rotateY(180deg);
+}
+
+.text-white {
+    color: #fff;
+}
+
+.card {
+    height: 70vh;
+    margin: 0.5rem;
+    position: relative;
+    width: 95%;
+}
+
+.card_front {
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 0.5rem;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.card_front_1_bg {
+    background-image: url('img/bg_card_front_1.png');
+}
+
+.card_front_2_bg {
+    background-image: url('img/bg_card_front_2.png');
+}
+
+.card_front_3_bg {
+    background-image: url('img/bg_card_front_3.png');
+}
+
+.card_back_1_bg {
+    background-image: url('img/bg_card_back_1.jpg');
+}
+
+.card_back_2_bg {
+    background-image: url('img/bg_card_back_2.jpg');
+}
+
+.card_back_3_bg {
+    background-image: url('img/bg_card_back_3.jpg');
+}
+
+.card_front_inner {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.card_front_active {
+    transform: rotateY(90deg);
+    transition: 250ms;
+    transition-timing-function: ease-out;
+}
+
+.card_back {
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 0.5rem;
+    height: 100%;
+    position: absolute;
+    transform: rotateY(90deg);
+    width: 100%;
+}
+
+.card_back_inner {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.card_back_active {
+    transform: rotateY(180deg);
+    transition-duration: 250ms;
+    transition-delay: 250ms;
+    transition-timing-function: ease-in;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (min-width: 1024px) {
+    .card {
+        width: 32%;
+    }
+}
