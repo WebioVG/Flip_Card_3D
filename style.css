@@ -19,6 +19,8 @@
     border-radius: 0.5rem;
     height: 100%;
     position: absolute;
+    transition-duration: 250ms;
+    transition-timing-function: ease-out;
     width: 100%;
 }
 
@@ -58,8 +60,6 @@
 
 .card_front_active {
     transform: rotateY(90deg);
-    transition: 250ms;
-    transition-timing-function: ease-out;
 }
 
 .card_back {
@@ -69,6 +69,8 @@
     height: 100%;
     position: absolute;
     transform: rotateY(90deg);
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
     width: 100%;
 }
 
@@ -84,9 +86,6 @@
 
 .card_back_active {
     transform: rotateY(180deg);
-    transition-duration: 250ms;
-    transition-delay: 250ms;
-    transition-timing-function: ease-in;
 }
 
 .container {
